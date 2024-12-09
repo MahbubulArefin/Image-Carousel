@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Carousel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imagefade">
+            <img class="img" src="/project5_images/sam1.png" width="100%">
+            <img class="img" src="/project5_images/sam2.png" width="100%">
+            <img class="img" src="/project5_images/sam3.png" width="100%">
+            <img class="img" src="/project5_images/sam4.png" width="100%">
+        </div>
+
+        <i id="prev" onclick="showimg(-1)" class="fa-solid fa-chevron-left">prev</i>
+        <i id="next" onclick="showimg(+1)" class="fa-solid fa-chevron-right">next</i>
+
+        <div class="dots">
+            <span class="dot" onclick="showimg(0)"></span>
+            <span class="dot" onclick="showimg(1)"></span>
+            <span class="dot" onclick="showimg(2)"></span>
+            <span class="dot" onclick="showimg(4)"></span>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
